@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    *{
+        margin: 0;
+    }
+   
+   .nav-list{
+    display: flex;
+    gap: 50px;
+    color: white;
+   }
+   .list{
+       list-style: none;
+   
+   }
+  ul li a:hover{
+     color: rgb(38, 33, 180);
+     transition: color 0.5s ease-in-out;
+   }
+   .list a{
+    text-decoration: none;
+    color: white;
+    
+   }
+   .header{
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 40px;
+   }
+   .button{
+    background-color: aqua;
+    border: none;
+    padding: 5px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+   }
+   button a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+   }
+   button:hover{
+    background-color: rgb(13, 21, 157);
+    transition: all 0.5s ease-in-out;
+   }
+  .dropdown{
+    position: absolute;
+    padding: 50px;
+    background-color: white;
+    box-shadow: 0.1px 2px 3px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+     color: rgb(18, 3, 3);
+    line-height: 5vh;
+    opacity: 0;
+    visibility: hidden;
+     left: 100px;
+     top: 80px;
+     display: flex;
+     flex-direction: row;
+     gap: 20px;
+  }
+  .list:hover .dropdown{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    visibility: visible;
+  } 
+  .dropdown  li a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bolder;
+    
+  }
+  ul li{
+      list-style: none;
+  }
+  #logo{
+    font-size:30px;
+  }
+   </style>
+   <html>
+   <body>
+    <header class="header">
+        
+            
+            <h2><i id="logo" class="fa-solid fa-cloud-bolt"></i>LOGO</h2>
+        </div>
+        <nav class="nav-bar">
+           <ul class="nav-list">
+               <li class="list">
+                <a href="#">Home v</a>
+                    <ul class="dropdown">
+                        <li><a href="#">dropdown</a>
+                            <p>get a better understading<br> wher your traffic is coming from</p>
+                        </li>
+                         <li><a href="#">dropdown</a> <p>get a better understading<br> wher your traffic is coming from</p>
+                        </li>
+                          <li><a href="#">dropdown</a> <p>get a better understading<br> wher your traffic is coming from</p></li>
+                           <li><a href="#">dropdown</a> <p>get a better understading<br> wher your traffic is coming from</p></li>
+                    </ul>
+              </li>
+               <li class="list"><a  href="2">About</a></li>
+               <li class="list"><a  href="3">Services</a></li>
+               <li class="list"><a  href="4">Contact us</a>
+                <ul>
+                    <li><p></p></li>
+                </ul>
+               </li>
+               <li  class="list"><a href="4">Terms & Conditions</a></li>
+           </ul>
+       </nav>
+       <button class="button">
+        <a href="#">Contact Us</a>
+       </button>
+    </header>
+</body>
+</html>
